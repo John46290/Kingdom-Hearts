@@ -1,4 +1,5 @@
-Questions/Use Cases: Finding a particular enemy, learning more about a world, where to get a certain keyblade.
+Description: this database gives data from Kingdom Hearts, specifically the first game.
+Questions/Use Cases: Where is a shadow located? What movie is Deep Jungle from? How do I get Lady Luck?
 Heartless:
   1. Shadow.
     World: All.
