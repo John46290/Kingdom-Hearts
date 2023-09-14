@@ -2,11 +2,11 @@ Description: this database gives data from Kingdom Hearts, specifically the firs
 Questions/Use Cases: Where is a shadow located? What movie is Deep Jungle from? How do I get Lady Luck?
 Heartless:
   1. Shadow.
-    World: All.
+    Drops: HP.
     Combat Role: Swarm.
     Body: small imp.
   2. Green Requiem.
-    World: Most.
+    Drops: Bright Shard.
     Combat Role: Healer.
     Body: small flying bell.
 Worlds:
