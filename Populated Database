@@ -41,3 +41,8 @@ foregin key ('WName') references World('WName'));
 Insert into HeartlessWorld values
 ("Shadow", "Destiny Islands"),
 ("Green Requiem", "Traverse Town");
+Select * from Heartless;
+Select * from World;
+Select * from Keyblades;
+Select * from Bosses;
+Select * from HeartlessWorld;
