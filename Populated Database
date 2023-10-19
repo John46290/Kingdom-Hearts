@@ -1,0 +1,43 @@
+create table Heartless (
+HName Text Primary Key,
+Drops Text,
+Role Text,
+Body Text);
+Insert into Heartless values
+("Shadow", "HP", "Swarm", "Small Imp"),
+("Green Requiem", "Bright Shard", "Healer", "Small Flying Bell");
+create table World (
+WName Text Primary Key,
+Origin Text,
+Appearance Text,
+Keyhole Text);
+Insert into World values
+("Agrabah", "Aladdin", "After the first third", "Cave of Wonders"),
+("Deep Jungle", "Tarzan", "End of first third", "Cavern of Hearts");
+create table Keyblades (
+KName Text Primary Key,
+Obtained Text,
+Power Text,
+Notability Text,
+Foreign Key (Origin) References World(WName));
+Insert into Keyblades values
+("Kingdom Key", "After Tutorial", "Weak", "Most iconic keyblade in the franchise", "Destiny Islands"),
+("Lady Luck", "Secret place in Wonderland", "Magical", "Enhances magic and summon power", "Wonderland");
+Create table Bosses (
+BName Text Primary Key,
+Time Text,
+Difficulty Text,
+Pattern Text);
+Insert into values
+("Darkside", "Tutorial and at end of the game", "Easy", "Summons shadows and fires energy beams"),
+("Sephiroth", "Olympus Colisseum", "Extreme", "Quick sword swings, many energy attacks");
+create table HeartlessWorld (
+HName Text,
+WName Text,
+Primary key ('HName', 'WName'),
+foreign key ('HName') references Heartless('HName'),
+on update cascade on delete restrict,
+foregin key ('WName') references World('WName'));
+Insert into HeartlessWorld values
+("Shadow", "Destiny Islands"),
+("Green Requiem", "Traverse Town");
