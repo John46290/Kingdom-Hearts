@@ -32,12 +32,11 @@ Insert into values
 ("Darkside", "Tutorial and at end of the game", "Easy", "Summons shadows and fires energy beams"),
 ("Sephiroth", "Olympus Colisseum", "Extreme", "Quick sword swings, many energy attacks");
 create table HeartlessWorld (
-HName Text,
-WName Text,
-Primary key ('HName', 'WName'),
-foreign key ('HName') references Heartless('HName'),
-on update cascade on delete restrict,
-foregin key ('WName') references World('WName'));
+HName varchar(255),
+WName varchar(255),
+Primary key (HName, WName),
+foreign key (HName) references Heartless(HName),
+foreign key (WName) references World(WName));
 Insert into HeartlessWorld values
 ("Shadow", "Destiny Islands"),
 ("Green Requiem", "Traverse Town");
