@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  Example Table
+{% endblock %}
+
+{% block content %}
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <tr>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>Jeff</td>
+  </tr>
+  <tr>
+    <td>
+      {{variable}}
+    </td>
+  </tr>
+</table>
+{% endblock %}
